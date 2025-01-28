@@ -1,0 +1,16 @@
+# Ignore build outputs
+/build/
+/dist/
+/out/
+*.class
+
+# Ignore IDE-specific files
+.idea/
+*.iml
+nbproject/
+
+# OS-specific files
+.DS_Store
+
+# Log files
+*.log
