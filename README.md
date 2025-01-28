@@ -20,23 +20,17 @@ Features
 
 Project Structure
 
-Weather_app/
-│
-├── src/
-│   ├── clientApplication/          # Backend logic for API requests and data handling
-│   │   ├── GetRequestClient.java   # Handles GET requests for fetching data
-│   │   ├── PostRequestClient.java  # Handles POST requests for creating resources
-│   │   ├── Weather.java            # Model class for weather data
-│   │   ├── Trip.java               # Model class for trip data
-│   │   └── ...
-│   ├── GUI_windows/                # GUI implementation using Java Swing
-│   │   ├── Login.java              # GUI for user login
-│   │   ├── MainMenu.java           # Main menu of the application
-│   │   ├── ProposeNewTrip.java     # GUI for creating new trips
-│   │   └── ...
-│
-├── README.md                       # Documentation for the project
-└── .gitignore                      # Git ignore file
+├── src/                    # Source code directory
+│   ├── ClientApplication/  # Client-side application directory
+│   │   ├── clientApplication/  # Contains the core logic of the client application
+│   │   └── GUI_windows/        # Graphical User Interface components for Windows
+│   │
+│   ├── RESTService/        # Backend RESTful API service directory
+│   │   └── java/               # Java source code for the RESTful API
+│     
+├── LICENSE                 # License details for the project
+├── README.md               # Main project documentation
+└── .gitignore              # Specifies files and directories to ignore in Git
 
 ---
 
