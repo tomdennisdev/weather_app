@@ -39,7 +39,14 @@ public class ForecastService {
     }
     
     private final String path = "https://api.openweathermap.org/data/2.5/forecast?";
-    private final String pathAfter = "&appid=b21ea78bd5959c9a95c8a52d7eea1bb3&units=metric";
+
+    private final String apiKey = System.getenv("WEATHER_API_KEY");
+
+    if (apiKey == null || secretKey == null) {
+        throw new IllegalStateException("API keys not set in environment variables");
+    }
+
+    private final String pathAfter = "&appid=" + apiKey + "&units=metric";
     
     public String getForecastJSON (String location){
         

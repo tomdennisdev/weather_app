@@ -34,8 +34,14 @@ public class RandomID {
     }
     
     public String getValidRandomID(){
+
+        String apiKey = System.getenv("RANDOM_ID_API_KEY");
+        if (apiKey == null || secretKey == null) {
+            throw new IllegalStateException("API keys not set in environment variables");
+        }
         
-        String request = "{\"jsonrpc\":\"2.0\",\"method\":\"generateUUIDs\",\"params\":{\"apiKey\":\"7d6ef362-729b-4a8c-b70a-76c78d4a005c\",\"n\":1},\"id\":24158}";
+        String request = "{\"jsonrpc\":\"2.0\",\"method\":\"generateUUIDs\",\"params\":{\"apiKey\":\"" + apiKey + "\",\"n\":1},\"id\":24158}";
+
         PostRequestClient newPostRequest = new PostRequestClient("randomID",request);
         String userIdJSON = newPostRequest.sendPostRequest();
         
