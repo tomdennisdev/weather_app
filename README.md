@@ -19,7 +19,7 @@ Features
 ---
 
 Project Structure
-
+```bash
 ├── src/                    # Source code directory
 │   ├── ClientApplication/  # Client-side application directory
 │   │   ├── clientApplication/  # Contains the core logic of the client application
@@ -31,7 +31,7 @@ Project Structure
 ├── LICENSE                 # License details for the project
 ├── README.md               # Main project documentation
 └── .gitignore              # Specifies files and directories to ignore in Git
-
+```
 ---
 
 Technologies Used
