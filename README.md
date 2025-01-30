@@ -5,7 +5,7 @@ RESTful Weather Application (Java)
 
 Overview
 
-A full-stack RESTful weather app with client-server architecture. The system utilises APIs to fetch real-time weather data, integrates external APIs for location-based forecasts, and features a responsive GUI for user interaction and collaboration.
+A full-stack weather application built on a client-server architecture. It integrates REST APIs and external APIs to provide real-time weather updates and location-based forecasts. The system features a responsive and intuitive user interface, enabling user interaction and collaboration.
 
 ---
 
